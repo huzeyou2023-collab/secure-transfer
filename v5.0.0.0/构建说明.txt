@@ -1,0 +1,30 @@
+安全传输（SecureTransfer）v5.0.0.0 源码包
+============================================
+
+本压缩包根目录为两个可执行程序：
+
+1) 安全传输-安装程序-v5.0.0.0.exe
+   双击安装（默认安装到 C:\Program Files\安全传输，创建桌面与开始菜单快捷方式）。
+   支持静默安装：安全传输-安装程序-v5.0.0.0.exe /S
+   卸载：C:\Program Files\安全传输\Uninstall 安全传输.exe
+
+2) 安全传输-便携版-v5.0.0.0.exe
+   解压到任意文件夹后双击即可运行，无需安装；关闭窗口即完全退出，
+   不写注册表、不留后台进程；数据仅保存在程序所在目录（Data\、下载\）。
+   删除该文件夹即等于卸载。
+
+「源码」目录为完整源码。构建安装器/便携版：
+
+1. 安装 Node.js ≥ 18（Windows x64），并确认 npm 可用。
+2. 在「源码」目录执行：npm install
+   （postinstall 会自动给 electron-builder 打四位版本号补丁）
+3. 构建：npm run dist:win
+   产物位于 release\：
+   - 安全传输-安装程序-v5.0.0.0.exe（NSIS，支持 /S 静默安装与静默卸载）
+   - 安全传输-便携版-v5.0.0.0.exe
+   如需把构建缓存放 D 盘避免占 C 盘：
+   $env:ELECTRON_BUILDER_CACHE = 'D:\.securetransfer-build\ecache'
+   若网络无法下载 Electron 二进制，可将 electron-v41.0.4-win32-x64.zip
+   放入上述缓存目录，并附加参数 -c.electronDist=该目录。
+
+详细说明见「源码\README.md」。
