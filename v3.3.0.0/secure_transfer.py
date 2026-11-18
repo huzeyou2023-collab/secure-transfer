@@ -1410,6 +1410,10 @@ class App:
         NeuButton(brow, self, "删除好友", self._del_contact, "pastel",
                   sp(110), sp(30), sp(9), tint="t_pink").cv.pack(side="left", padx=sp(8))
 
+        self.R(tk.Label(side, text=f"{VERSION}　开源协议 MIT\n允许商用与修改，再分发时请保留版权声明",
+                        bg=hx(P["fill"]), fg=hx(P["muted"]), font=(UI_FONT, sp(7)),
+                        justify="left", anchor="w"), "fill", "muted").pack(anchor="w", pady=(sp(10), 0))
+
         main = self.R(tk.Frame(outer, bg=hx(P["bg"])), "bg")
         main.pack(side="left", fill="both", expand=True, padx=(sp(12), 0))
 

@@ -660,6 +660,7 @@ export const SettingsView: React.FC<Props> = ({ self, onClose, onProfileSaved, o
                   <div className="about-row"><span>运行模式</span><span>{runtime.isPortable ? '便携版（免安装，零残留）' : '安装版（可开机自启 / 托盘驻留）'}</span></div>
                   <div className="about-row"><span>加密</span><span>X25519 握手 · 豪密 · {encStrength} 位 / {strengthDetail(encStrength)}</span></div>
                   <div className="about-row"><span>界面</span><span>Liquid Glass · 白底马卡龙 · 圆弧窗口</span></div>
+                  <div className="about-row"><span>开源</span><span>MIT 协议。允许商用与修改，再分发时请保留版权声明。</span></div>
                 </div>
                 <div className="settings-hint">
                   版本号采用 4 位格式（当前 v6.1.4.0）。后续每次更新按改动幅度递增版本号。

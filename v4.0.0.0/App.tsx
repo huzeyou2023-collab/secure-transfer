@@ -108,6 +108,7 @@ export default function App() {
             <div>
               <div className="brand-name">安全传输</div>
               <div className="brand-sub">本机：{self.name}</div>
+              <div className="brand-sub">开源协议：MIT</div>
             </div>
           </div>
           <AddFriend onAdded={() => {}} />

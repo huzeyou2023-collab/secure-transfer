@@ -506,6 +506,12 @@ class App:
         ttk.Button(brow, text="连接", width=9, command=self._connect_selected).pack(side="left")
         ttk.Button(brow, text="删除", width=9, command=self._del_contact).pack(side="left", padx=4)
 
+        ttk.Separator(left, orient="horizontal").pack(fill="x", pady=(10, 4))
+        ttk.Label(left, text="开源协议 MIT").pack(anchor="w")
+        ttk.Label(left, text="允许商用与修改，再分发时请保留版权声明",
+                  wraplength=220, foreground="#666",
+                  font=("Microsoft YaHei UI", 8)).pack(anchor="w")
+
         right = ttk.Frame(self.root, padding=8)
         right.pack(side="left", fill="both", expand=True)
         self.chat = scrolledtext.ScrolledText(right, wrap="word", state="disabled", font=("Microsoft YaHei UI", 10))

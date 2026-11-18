@@ -176,6 +176,8 @@ export const SettingsView: React.FC<Props> = ({ self, onClose, onProfileSaved })
             </>
           )}
 
+          <div className="settings-section-title">开源</div>
+          <div className="settings-note">MIT 协议。允许商用与修改，再分发时请保留版权声明。</div>
           <div className="settings-version">{runtime.version}{runtime.isPortable ? ' · 便携版' : ' · 安装版'}</div>
         </div>
       </div>
