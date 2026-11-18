@@ -1,0 +1,1 @@
+﻿本包为安全传输最早的 Python 初版（v1，2026-09-12，来源 U盘备份）。内容：secure_transfer.py 单文件源码 + requirements.txt + 使用说明 + 启动.bat + 安全传输-安装程序-v1.0.0.0.exe（PyInstaller 打包安装程序，无版本信息）+ 安全传输-便携版-v1.0.0.0.exe（2026-11-17 用本包源码 PyInstaller 重建，原始便携版未留存）。此版本为 Electron 版之前的历史版本，仅供参考。
