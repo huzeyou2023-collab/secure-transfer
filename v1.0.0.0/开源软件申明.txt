@@ -1,0 +1,12 @@
+开源软件申明（NOTICE）
+
+「安全传输（SecureTransfer）」依据 MIT 许可协议开源（详见同目录 LICENSE）。
+您可以自由使用、复制、修改、合并、发布与分发本软件，但须保留版权与许可声明。
+
+本版本随附或依赖的第三方开源组件：
+- Python（PSF License）https://www.python.org/
+- Tkinter（随 Python 发行，PSF License）
+- PyInstaller（GPL-2.0，含链接例外）https://pyinstaller.org/
+- NSIS（zlib/libpng License）https://nsis.sourceforge.io/
+
+上述组件版权归其原作者所有，本声明不改变其原有许可。
