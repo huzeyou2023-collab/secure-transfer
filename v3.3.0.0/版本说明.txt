@@ -1,0 +1,1 @@
+﻿本包为安全传输 Python 版 V3.3（Tkinter 桌面版，2026-10-06）。来源：飞书云盘。内容：secure_transfer.py（VERSION=V3.3）+ requirements.txt + assets + 使用说明 + 启动.bat + 安全传输-安装程序-v3.3.0.0.exe（NSIS 安装器）+ 安全传输-便携版-v3.3.0.0.exe（PyInstaller 单文件，原名为 安全传输.exe）。
